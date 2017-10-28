@@ -394,6 +394,8 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["skin_tone"]			, skin_tone)
 	WRITE_FILE(S["hair_style_name"]	, hair_style)
 	WRITE_FILE(S["facial_style_name"]	, facial_hair_style)
+	WRITE_FILE(S["troll_caste"] , troll_caste)
+	WRITE_FILE(S["troll_horn"] , troll_horn)
 	WRITE_FILE(S["underwear"]			, underwear)
 	WRITE_FILE(S["undershirt"]			, undershirt)
 	WRITE_FILE(S["socks"]				, socks)
