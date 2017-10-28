@@ -18,7 +18,7 @@
 		if(damaged_clothes)
 			. += mutable_appearance('icons/effects/item_damage.dmi', "damagedgloves")
 		if(blood_DNA)
-			. += mutable_appearance('icons/effects/blood.dmi', "bloodyhands")
+			. += mutable_appearance(get_blood_graphic(blood_DNA), "bloodyhands")
 
 /obj/item/clothing/gloves/update_clothes_damaged_state(damaging = TRUE)
 	..()

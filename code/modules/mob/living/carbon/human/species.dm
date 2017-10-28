@@ -24,6 +24,8 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 	var/hair_alpha = 255	// the alpha used by the hair. 255 is completely solid, 0 is transparent.
 
 	var/use_skintones = 0	// does it use skintones or not? (spoiler alert this is only used by humans)
+	var/has_castes = 0 // does it have castes? (basically means is_troll)
+	var/troll_caste = "burgundy" //burgundy is the default caste, won't matter if has_castes is 0
 	var/exotic_blood = ""	// If your race wants to bleed something other than bog standard blood, change this to reagent id.
 	var/exotic_bloodtype = "" //If your race uses a non standard bloodtype (A+, O-, AB-, etc)
 	var/meat = /obj/item/reagent_containers/food/snacks/meat/slab/human //What the species drops on gibbing
@@ -417,6 +419,14 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 					hair_overlay.pixel_y += H.dna.species.offset_features[OFFSET_FACE][2]
 		if(hair_overlay.icon)
 			standing += hair_overlay
+	if(H.troll_horn && (TROLLHORNS in species_traits))
+		var/mutable_appearance/horns_overlay = mutable_appearance(layer = -HAIR_LAYER)
+		S = GLOB.troll_horns_list[H.troll_horn]
+		if(S)
+			horns_overlay.icon = S.icon
+			horns_overlay.icon_state = S.icon_state
+		if(horns_overlay.icon)
+			standing+=horns_overlay
 
 	if(standing.len)
 		H.overlays_standing[HAIR_LAYER] = standing

@@ -11,7 +11,10 @@
 	permeability_coefficient = 0.5
 	slowdown = SHOES_SLOWDOWN
 	var/blood_state = BLOOD_STATE_NOT_BLOODY
-	var/list/bloody_shoes = list(BLOOD_STATE_HUMAN = 0,BLOOD_STATE_XENO = 0, BLOOD_STATE_OIL = 0, BLOOD_STATE_NOT_BLOODY = 0)
+	var/list/bloody_shoes = list(BLOOD_STATE_HUMAN = 0,BLOOD_STATE_XENO = 0, BLOOD_STATE_OIL = 0, BLOOD_STATE_NOT_BLOODY = 0, 
+	BLOOD_STATE_TROLL_BURGUNDY = 0, BLOOD_STATE_TROLL_BROWN = 0, BLOOD_STATE_TROLL_YELLOW = 0, BLOOD_STATE_TROLL_LIME = 0, 
+	BLOOD_STATE_TROLL_OLIVE = 0, BLOOD_STATE_TROLL_JADE = 0, BLOOD_STATE_TROLL_TEAL = 0, BLOOD_STATE_TROLL_CERULEAN = 0, 
+	BLOOD_STATE_TROLL_INDIGO = 0, BLOOD_STATE_TROLL_PURPLE = 0, BLOOD_STATE_TROLL_VIOLET = 0, BLOOD_STATE_TROLL_FUSCHIA = 0)
 	var/offset = 0
 	var/equipped_before_drop = FALSE
 
@@ -19,15 +22,18 @@
 	. = list()
 	if(!isinhands)
 		var/bloody = 0
+		var/color = ""
 		if(blood_DNA)
 			bloody = 1
+			color=blood_DNA["color"]
 		else
 			bloody = bloody_shoes[BLOOD_STATE_HUMAN]
 
 		if(damaged_clothes)
 			. += mutable_appearance('icons/effects/item_damage.dmi', "damagedshoe")
 		if(bloody)
-			. += mutable_appearance('icons/effects/blood.dmi', "shoeblood")
+			var/blood_file=addtext("icons/effects/blood",color,".dmi")
+			. += mutable_appearance(blood_file, "shoeblood")
 
 /obj/item/clothing/shoes/equipped(mob/user, slot)
 	. = ..()
