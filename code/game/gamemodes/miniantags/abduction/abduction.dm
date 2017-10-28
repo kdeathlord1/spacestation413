@@ -1,5 +1,5 @@
 /datum/objective_team/abductor_team
-	member_name = "abductor" 
+	member_name = "abductor"
 	var/list/objectives = list()
 	var/team_number
 
@@ -21,7 +21,7 @@
 	antag_flag = ROLE_ABDUCTOR
 	false_report_weight = 1
 	recommended_enemies = 2
-	required_players = 15
+	required_players = 13
 	maximum_players = 50
 	var/max_teams = 4
 	var/list/datum/objective_team/abductor_team/abductor_teams = list()

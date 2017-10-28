@@ -7,7 +7,7 @@
 	config_tag = "wizard"
 	antag_flag = ROLE_WIZARD
 	false_report_weight = 10
-	required_players = 20
+	required_players = 15
 	required_enemies = 1
 	recommended_enemies = 1
 	enemy_minimum_age = 14
@@ -47,7 +47,7 @@
 	for(var/datum/mind/wizard in wizards)
 		if(isliving(wizard.current) && wizard.current.stat!=DEAD)
 			return FALSE
-	
+
 	for(var/obj/item/phylactery/P in GLOB.poi_list) //TODO : IsProperlyDead()
 		if(P.mind && P.mind.has_antag_datum(/datum/antagonist/wizard))
 			return FALSE
@@ -55,7 +55,7 @@
 	if(SSevents.wizardmode) //If summon events was active, turn it off
 		SSevents.toggleWizardmode()
 		SSevents.resetFrequency()
-	
+
 	return TRUE
 
 /datum/game_mode/wizard/declare_completion()
