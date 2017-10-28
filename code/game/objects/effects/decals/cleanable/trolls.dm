@@ -1,98 +1,122 @@
 /obj/effect/decal/cleanable/blood/troll_r
-	desc = "It's burgundy and gooey. Perhaps it's the chef's cooking?"
+	desc = "It's burgundy and gooey. Perhaps it's grub sauce?"
 	icon = 'icons/effects/bloodr.dmi'
 	blood_state = BLOOD_STATE_TROLL_BURGUNDY
 
 /obj/effect/decal/cleanable/blood/troll_b
-	desc = "It's brown and gooey. Perhaps it's the chef's cooking?"
+	desc = "It's brown and gooey. Perhaps it's grub sauce?"
 	icon = 'icons/effects/bloodb.dmi'
 	blood_state = BLOOD_STATE_TROLL_BROWN
 
 /obj/effect/decal/cleanable/blood/troll_y
-	desc = "It's yellow and gooey. Perhaps it's the chef's cooking?"
+	desc = "It's yellow and gooey. Perhaps it's grub sauce?"
 	icon = 'icons/effects/bloody.dmi'
 	blood_state = BLOOD_STATE_TROLL_YELLOW
 
 /obj/effect/decal/cleanable/blood/troll_l
-	desc = "It's lime and gooey. Perhaps it's the chef's cooking?"
+	desc = "It's lime and gooey. Perhaps it's grub sauce?"
 	icon = 'icons/effects/bloodl.dmi'
 	blood_state = BLOOD_STATE_TROLL_LIME
 
 /obj/effect/decal/cleanable/blood/troll_o
-	desc = "It's olive and gooey. Perhaps it's the chef's cooking?"
+	desc = "It's olive and gooey. Perhaps it's grub sauce?"
 	icon = 'icons/effects/bloodo.dmi'
 	blood_state = BLOOD_STATE_TROLL_OLIVE
 
 /obj/effect/decal/cleanable/blood/troll_j
-	desc = "It's jade and gooey. Perhaps it's the chef's cooking?"
+	desc = "It's jade and gooey. Perhaps it's grub sauce?"
 	icon = 'icons/effects/bloodj.dmi'
 	blood_state = BLOOD_STATE_TROLL_JADE
 
 /obj/effect/decal/cleanable/blood/troll_t
-	desc = "It's teal and gooey. Perhaps it's the chef's cooking?"
+	desc = "It's teal and gooey. Perhaps it's grub sauce?"
 	icon = 'icons/effects/bloodt.dmi'
 	blood_state = BLOOD_STATE_TROLL_TEAL
 
 /obj/effect/decal/cleanable/blood/troll_c
-	desc = "It's cerulean and gooey. Perhaps it's the chef's cooking?"
+	desc = "It's cerulean and gooey. Perhaps it's grub sauce?"
 	icon = 'icons/effects/bloodc.dmi'
 	blood_state = BLOOD_STATE_TROLL_CERULEAN
 
 /obj/effect/decal/cleanable/blood/troll_i
-	desc = "It's indigo and gooey. Perhaps it's the chef's cooking?"
+	desc = "It's indigo and gooey. Perhaps it's grub sauce?"
 	icon = 'icons/effects/bloodi.dmi'
 	blood_state = BLOOD_STATE_TROLL_INDIGO
 
 /obj/effect/decal/cleanable/blood/troll_p
-	desc = "It's purple and gooey. Perhaps it's the chef's cooking?"
+	desc = "It's purple and gooey. Perhaps it's grub sauce?"
 	icon = 'icons/effects/bloodp.dmi'
 	blood_state = BLOOD_STATE_TROLL_PURPLE
 
 /obj/effect/decal/cleanable/blood/troll_v
-	desc = "It's violet and gooey. Perhaps it's the chef's cooking?"
+	desc = "It's violet and gooey. Perhaps it's grub sauce?"
 	icon = 'icons/effects/bloodv.dmi'
 	blood_state = BLOOD_STATE_TROLL_VIOLET
 
 /obj/effect/decal/cleanable/blood/troll_f
-	desc = "It's fuschia and gooey. Perhaps it's the chef's cooking?"
+	desc = "It's fuschia and gooey. Perhaps it's grub sauce?"
 	icon = 'icons/effects/bloodf.dmi'
 	blood_state = BLOOD_STATE_TROLL_FUSCHIA
 
 /obj/effect/decal/cleanable/blood/splatter/troll_r
+	desc = "It's burgundy and gooey. Perhaps it's grub sauce?"
 	icon = 'icons/effects/bloodr.dmi'
+	blood_state = BLOOD_STATE_TROLL_BURGUNDY
 
 /obj/effect/decal/cleanable/blood/splatter/troll_b
+	desc = "It's brown and gooey. Perhaps it's grub sauce?"
 	icon = 'icons/effects/bloodb.dmi'
+	blood_state = BLOOD_STATE_TROLL_BROWN
 
 /obj/effect/decal/cleanable/blood/splatter/troll_y
+	desc = "It's yellow and gooey. Perhaps it's grub sauce?"
 	icon = 'icons/effects/bloody.dmi'
+	blood_state = BLOOD_STATE_TROLL_YELLOW
 
 /obj/effect/decal/cleanable/blood/splatter/troll_l
+	desc = "It's lime and gooey. Perhaps it's grub sauce?"
 	icon = 'icons/effects/bloodl.dmi'
+	blood_state = BLOOD_STATE_TROLL_LIME
 
 /obj/effect/decal/cleanable/blood/splatter/troll_o
+	desc = "It's olive and gooey. Perhaps it's grub sauce?"
 	icon = 'icons/effects/bloodo.dmi'
+	blood_state = BLOOD_STATE_TROLL_OLIVE
 
 /obj/effect/decal/cleanable/blood/splatter/troll_j
+	desc = "It's jade and gooey. Perhaps it's grub sauce?"
 	icon = 'icons/effects/bloodj.dmi'
+	blood_state = BLOOD_STATE_TROLL_JADE
 
 /obj/effect/decal/cleanable/blood/splatter/troll_t
+	desc = "It's teal and gooey. Perhaps it's grub sauce?"
 	icon = 'icons/effects/bloodt.dmi'
+	blood_state = BLOOD_STATE_TROLL_TEAL
 
 /obj/effect/decal/cleanable/blood/splatter/troll_c
+	desc = "It's cerulean and gooey. Perhaps it's grub sauce?"
 	icon = 'icons/effects/bloodc.dmi'
+	blood_state = BLOOD_STATE_TROLL_CERULEAN
 
 /obj/effect/decal/cleanable/blood/splatter/troll_i
+	desc = "It's indigo and gooey. Perhaps it's grub sauce?"
 	icon = 'icons/effects/bloodi.dmi'
+	blood_state = BLOOD_STATE_TROLL_INDIGO
 
 /obj/effect/decal/cleanable/blood/splatter/troll_p
+	desc = "It's purple and gooey. Perhaps it's grub sauce?"
 	icon = 'icons/effects/bloodp.dmi'
+	blood_state = BLOOD_STATE_TROLL_PURPLE
 
 /obj/effect/decal/cleanable/blood/splatter/troll_v
+	desc = "It's violet and gooey. Perhaps it's grub sauce?"
 	icon = 'icons/effects/bloodv.dmi'
+	blood_state = BLOOD_STATE_TROLL_VIOLET
 
 /obj/effect/decal/cleanable/blood/splatter/troll_f
+	desc = "It's fuschia and gooey. Perhaps it's grub sauce?"
 	icon = 'icons/effects/bloodf.dmi'
+	blood_state = BLOOD_STATE_TROLL_FUSCHIA
 
 /obj/effect/decal/cleanable/blood/gibs/troll_r
 	icon = 'icons/effects/bloodr.dmi'
