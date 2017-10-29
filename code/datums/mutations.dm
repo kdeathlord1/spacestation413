@@ -323,7 +323,7 @@ GLOBAL_LIST_EMPTY(mutations_list)
 			if(1)
 				owner.emote("twitch")
 			if(2 to 3)
-				owner.say("[prob(50) ? ";" : ""][pick("SHIT", "ACT 7 WAS GOOD", "VRISKA IS A GOOD CHARACTER", "PISS", "PILWEEF", "FUCK", "CUNT", "I SHIP JOHNVRIS", "COCKSUCKER", "MOTHERFUCKER", "TITS")]")
+				owner.say("[prob(50) ? ";" : ""][pick("SHIT", "ACT 7 WAS GOOD", "VRISKA IS A GOOD CHARACTER", "PISS", "PILLWEEF", "FUCK", "CUNT", "I SHIP JOHNVRIS", "COCKSUCKER", "MOTHERFUCKER", "TITS")]")
 		var/x_offset_old = owner.pixel_x
 		var/y_offset_old = owner.pixel_y
 		var/x_offset = owner.pixel_x + rand(-2,2)
