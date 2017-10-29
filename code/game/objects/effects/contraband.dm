@@ -65,7 +65,7 @@
 	if(!ruined)
 		original_name = name // can't use initial because of random posters
 		name = "poster - [name]"
-		desc = "A large piece of space-resistant printed paper. [desc]"
+		desc = "[desc]"
 
 /obj/structure/sign/poster/proc/randomise(base_type)
 	var/list/poster_types = subtypesof(base_type)
