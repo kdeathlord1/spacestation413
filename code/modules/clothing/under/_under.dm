@@ -23,7 +23,7 @@
 		if(damaged_clothes)
 			. += mutable_appearance('icons/effects/item_damage.dmi', "damageduniform")
 		if(blood_DNA)
-			. += mutable_appearance('icons/effects/blood.dmi', "uniformblood")
+			. += mutable_appearance(get_blood_graphic(blood_DNA), "uniformblood")
 		if(accessory_overlay)
 			. += accessory_overlay
 
