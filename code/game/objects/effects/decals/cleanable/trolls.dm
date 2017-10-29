@@ -203,49 +203,37 @@
 	desc = "It's fuschia."
 
 /obj/effect/decal/cleanable/blood/footprints/troll_r
-	icon = 'icons/effects/footprintsr.dmi'
 	blood_state=BLOOD_STATE_TROLL_BURGUNDY
 
 /obj/effect/decal/cleanable/blood/footprints/troll_b
-	icon = 'icons/effects/footprintsb.dmi'
 	blood_state=BLOOD_STATE_TROLL_BROWN
 
 /obj/effect/decal/cleanable/blood/footprints/troll_y
-	icon = 'icons/effects/footprintsy.dmi'
 	blood_state=BLOOD_STATE_TROLL_YELLOW
 
 /obj/effect/decal/cleanable/blood/footprints/troll_l
-	icon = 'icons/effects/footprintsl.dmi'
 	blood_state=BLOOD_STATE_TROLL_LIME
 
 /obj/effect/decal/cleanable/blood/footprints/troll_o
-	icon = 'icons/effects/footprintso.dmi'
 	blood_state=BLOOD_STATE_TROLL_OLIVE
 
 /obj/effect/decal/cleanable/blood/footprints/troll_j
-	icon = 'icons/effects/footprintsj.dmi'
 	blood_state=BLOOD_STATE_TROLL_JADE
 
 /obj/effect/decal/cleanable/blood/footprints/troll_t
-	icon = 'icons/effects/footprintst.dmi'
 	blood_state=BLOOD_STATE_TROLL_TEAL
 
 /obj/effect/decal/cleanable/blood/footprints/troll_c
-	icon = 'icons/effects/footprintsc.dmi'
 	blood_state=BLOOD_STATE_TROLL_CERULEAN
 
 /obj/effect/decal/cleanable/blood/footprints/troll_i
-	icon = 'icons/effects/footprintsi.dmi'
 	blood_state=BLOOD_STATE_TROLL_INDIGO
 
 /obj/effect/decal/cleanable/blood/footprints/troll_p
-	icon = 'icons/effects/footprintsp.dmi'
 	blood_state=BLOOD_STATE_TROLL_PURPLE
 
 /obj/effect/decal/cleanable/blood/footprints/troll_v
-	icon = 'icons/effects/footprintsv.dmi'
 	blood_state=BLOOD_STATE_TROLL_VIOLET
 
 /obj/effect/decal/cleanable/blood/footprints/troll_f
-	icon = 'icons/effects/footprintsf.dmi'
 	blood_state=BLOOD_STATE_TROLL_FUSCHIA
