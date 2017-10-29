@@ -23,6 +23,7 @@
 	if(H)
 		H.endTailWag()
 
+
 /datum/species/troll/space_move(mob/living/carbon/human/H)
 	var/obj/item/device/flightpack/F = H.get_flightpack()
 	if(istype(F) && (F.flight) && F.allow_thrust(0.01, src))
@@ -34,6 +35,31 @@ datum/species/troll/on_species_gain(mob/living/carbon/human/H, datum/species/old
 	if(H.dna.features["tail_human"] == "Cat")
 		var/tail = /obj/item/organ/tail/cat
 		mutant_organs += tail
+	switch(H.troll_caste)
+		if("burgundy")
+			H.gib_type = /obj/effect/decal/cleanable/blood/gibs/troll_r
+		if("brown")
+			H.gib_type = /obj/effect/decal/cleanable/blood/gibs/troll_b
+		if("yellow")
+			H.gib_type = /obj/effect/decal/cleanable/blood/gibs/troll_y
+		if("lime")
+			H.gib_type = /obj/effect/decal/cleanable/blood/gibs/troll_l
+		if("olive")
+			H.gib_type = /obj/effect/decal/cleanable/blood/gibs/troll_o
+		if("jade")
+			H.gib_type = /obj/effect/decal/cleanable/blood/gibs/troll_j
+		if("teal")
+			H.gib_type = /obj/effect/decal/cleanable/blood/gibs/troll_t
+		if("cerulean")
+			H.gib_type = /obj/effect/decal/cleanable/blood/gibs/troll_c
+		if("indigo")
+			H.gib_type = /obj/effect/decal/cleanable/blood/gibs/troll_i
+		if("purple")
+			H.gib_type = /obj/effect/decal/cleanable/blood/gibs/troll_p
+		if("violet")
+			H.gib_type = /obj/effect/decal/cleanable/blood/gibs/troll_v
+		if("fuschia")
+			H.gib_type = /obj/effect/decal/cleanable/blood/gibs/troll_f
 	..()
 
 /datum/species/troll/random_name(gender,unique,lastname)

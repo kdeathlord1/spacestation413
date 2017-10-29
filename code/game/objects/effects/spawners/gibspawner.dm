@@ -70,6 +70,76 @@
 	gibdirections = list(list(NORTH, NORTHEAST, NORTHWEST),list(SOUTH, SOUTHEAST, SOUTHWEST),list(WEST, NORTHWEST, SOUTHWEST),list(EAST, NORTHEAST, SOUTHEAST), GLOB.alldirs, list())
 	. = ..()
 
+/obj/effect/gibspawner/troll
+	gibamounts = list(1,1,1,1,1,1,1)
+
+/obj/effect/gibspawner/troll/Initialize(caste)
+	playsound(src, 'sound/effects/blobattack.ogg', 50, 1)
+	gibdirections = list(list(NORTH, NORTHEAST, NORTHWEST),list(SOUTH, SOUTHEAST, SOUTHWEST),list(WEST, NORTHWEST, SOUTHWEST),list(EAST, NORTHEAST, SOUTHEAST), GLOB.alldirs, GLOB.alldirs, list())
+	.=..()
+
+/obj/effect/gibspawner/troll/r
+	gibtypes=list(/obj/effect/decal/cleanable/blood/gibs/up/troll_r, /obj/effect/decal/cleanable/blood/gibs/down/troll_r, /obj/effect/decal/cleanable/blood/gibs/troll_r, /obj/effect/decal/cleanable/blood/gibs/troll_r, /obj/effect/decal/cleanable/blood/gibs/body/troll_r, /obj/effect/decal/cleanable/blood/gibs/limb/troll_r, /obj/effect/decal/cleanable/blood/gibs/core/troll_r)
+/obj/effect/gibspawner/troll/b
+	gibtypes=list(/obj/effect/decal/cleanable/blood/gibs/up/troll_r, /obj/effect/decal/cleanable/blood/gibs/down/troll_r, /obj/effect/decal/cleanable/blood/gibs/troll_r, /obj/effect/decal/cleanable/blood/gibs/troll_r, /obj/effect/decal/cleanable/blood/gibs/body/troll_r, /obj/effect/decal/cleanable/blood/gibs/limb/troll_r, /obj/effect/decal/cleanable/blood/gibs/core/troll_r)
+/obj/effect/gibspawner/troll/b
+	gibtypes=list(/obj/effect/decal/cleanable/blood/gibs/up/troll_b, /obj/effect/decal/cleanable/blood/gibs/down/troll_b, /obj/effect/decal/cleanable/blood/gibs/troll_b, /obj/effect/decal/cleanable/blood/gibs/troll_b, /obj/effect/decal/cleanable/blood/gibs/body/troll_b, /obj/effect/decal/cleanable/blood/gibs/limb/troll_b, /obj/effect/decal/cleanable/blood/gibs/core/troll_b)
+/obj/effect/gibspawner/troll/y
+	gibtypes=list(/obj/effect/decal/cleanable/blood/gibs/up/troll_y, /obj/effect/decal/cleanable/blood/gibs/down/troll_y, /obj/effect/decal/cleanable/blood/gibs/troll_y, /obj/effect/decal/cleanable/blood/gibs/troll_y, /obj/effect/decal/cleanable/blood/gibs/body/troll_y, /obj/effect/decal/cleanable/blood/gibs/limb/troll_y, /obj/effect/decal/cleanable/blood/gibs/core/troll_y)
+/obj/effect/gibspawner/troll/l
+	gibtypes=list(/obj/effect/decal/cleanable/blood/gibs/up/troll_l, /obj/effect/decal/cleanable/blood/gibs/down/troll_l, /obj/effect/decal/cleanable/blood/gibs/troll_l, /obj/effect/decal/cleanable/blood/gibs/troll_l, /obj/effect/decal/cleanable/blood/gibs/body/troll_l, /obj/effect/decal/cleanable/blood/gibs/limb/troll_l, /obj/effect/decal/cleanable/blood/gibs/core/troll_l)
+/obj/effect/gibspawner/troll/o
+	gibtypes=list(/obj/effect/decal/cleanable/blood/gibs/up/troll_o, /obj/effect/decal/cleanable/blood/gibs/down/troll_o, /obj/effect/decal/cleanable/blood/gibs/troll_o, /obj/effect/decal/cleanable/blood/gibs/troll_o, /obj/effect/decal/cleanable/blood/gibs/body/troll_o, /obj/effect/decal/cleanable/blood/gibs/limb/troll_o, /obj/effect/decal/cleanable/blood/gibs/core/troll_o)
+/obj/effect/gibspawner/troll/j
+	gibtypes=list(/obj/effect/decal/cleanable/blood/gibs/up/troll_j, /obj/effect/decal/cleanable/blood/gibs/down/troll_j, /obj/effect/decal/cleanable/blood/gibs/troll_j, /obj/effect/decal/cleanable/blood/gibs/troll_j, /obj/effect/decal/cleanable/blood/gibs/body/troll_j, /obj/effect/decal/cleanable/blood/gibs/limb/troll_j, /obj/effect/decal/cleanable/blood/gibs/core/troll_j)
+/obj/effect/gibspawner/troll/t
+	gibtypes=list(/obj/effect/decal/cleanable/blood/gibs/up/troll_t, /obj/effect/decal/cleanable/blood/gibs/down/troll_t, /obj/effect/decal/cleanable/blood/gibs/troll_t, /obj/effect/decal/cleanable/blood/gibs/troll_t, /obj/effect/decal/cleanable/blood/gibs/body/troll_t, /obj/effect/decal/cleanable/blood/gibs/limb/troll_t, /obj/effect/decal/cleanable/blood/gibs/core/troll_t)
+/obj/effect/gibspawner/troll/c
+	gibtypes=list(/obj/effect/decal/cleanable/blood/gibs/up/troll_c, /obj/effect/decal/cleanable/blood/gibs/down/troll_c, /obj/effect/decal/cleanable/blood/gibs/troll_c, /obj/effect/decal/cleanable/blood/gibs/troll_c, /obj/effect/decal/cleanable/blood/gibs/body/troll_c, /obj/effect/decal/cleanable/blood/gibs/limb/troll_c, /obj/effect/decal/cleanable/blood/gibs/core/troll_c)
+/obj/effect/gibspawner/troll/i
+	gibtypes=list(/obj/effect/decal/cleanable/blood/gibs/up/troll_i, /obj/effect/decal/cleanable/blood/gibs/down/troll_i, /obj/effect/decal/cleanable/blood/gibs/troll_i, /obj/effect/decal/cleanable/blood/gibs/troll_i, /obj/effect/decal/cleanable/blood/gibs/body/troll_i, /obj/effect/decal/cleanable/blood/gibs/limb/troll_i, /obj/effect/decal/cleanable/blood/gibs/core/troll_i)
+/obj/effect/gibspawner/troll/p
+	gibtypes=list(/obj/effect/decal/cleanable/blood/gibs/up/troll_p, /obj/effect/decal/cleanable/blood/gibs/down/troll_p, /obj/effect/decal/cleanable/blood/gibs/troll_p, /obj/effect/decal/cleanable/blood/gibs/troll_p, /obj/effect/decal/cleanable/blood/gibs/body/troll_p, /obj/effect/decal/cleanable/blood/gibs/limb/troll_p, /obj/effect/decal/cleanable/blood/gibs/core/troll_p)
+/obj/effect/gibspawner/troll/v
+	gibtypes=list(/obj/effect/decal/cleanable/blood/gibs/up/troll_v, /obj/effect/decal/cleanable/blood/gibs/down/troll_v, /obj/effect/decal/cleanable/blood/gibs/troll_v, /obj/effect/decal/cleanable/blood/gibs/troll_v, /obj/effect/decal/cleanable/blood/gibs/body/troll_v, /obj/effect/decal/cleanable/blood/gibs/limb/troll_v, /obj/effect/decal/cleanable/blood/gibs/core/troll_v)
+/obj/effect/gibspawner/troll/f
+	gibtypes=list(/obj/effect/decal/cleanable/blood/gibs/up/troll_f, /obj/effect/decal/cleanable/blood/gibs/down/troll_f, /obj/effect/decal/cleanable/blood/gibs/troll_f, /obj/effect/decal/cleanable/blood/gibs/troll_f, /obj/effect/decal/cleanable/blood/gibs/body/troll_f, /obj/effect/decal/cleanable/blood/gibs/limb/troll_f, /obj/effect/decal/cleanable/blood/gibs/core/troll_f)
+
+/obj/effect/gibspawner/trollbodypartless //only the gibs that don't look like actual full bodyparts (except torso).
+	gibamounts = list(1, 1, 1, 1, 1, 1)
+
+/obj/effect/gibspawner/trollbodypartless/Initialize(caste)
+	playsound(src, 'sound/effects/blobattack.ogg', 50, 1)
+	gibdirections = list(list(NORTH, NORTHEAST, NORTHWEST),list(SOUTH, SOUTHEAST, SOUTHWEST),list(WEST, NORTHWEST, SOUTHWEST),list(EAST, NORTHEAST, SOUTHEAST), GLOB.alldirs, list())
+	. = ..()
+
+/obj/effect/gibspawner/trollbodypartless/r
+	gibtypes=list(/obj/effect/decal/cleanable/blood/gibs/troll_r, /obj/effect/decal/cleanable/blood/gibs/core/troll_r, /obj/effect/decal/cleanable/blood/gibs/troll_r, /obj/effect/decal/cleanable/blood/gibs/core/troll_r, /obj/effect/decal/cleanable/blood/gibs/troll_r, /obj/effect/decal/cleanable/blood/gibs/torso/troll_r)
+/obj/effect/gibspawner/trollbodypartless/b
+	gibtypes=list(/obj/effect/decal/cleanable/blood/gibs/troll_r, /obj/effect/decal/cleanable/blood/gibs/core/troll_r, /obj/effect/decal/cleanable/blood/gibs/troll_r, /obj/effect/decal/cleanable/blood/gibs/core/troll_r, /obj/effect/decal/cleanable/blood/gibs/troll_r, /obj/effect/decal/cleanable/blood/gibs/torso/troll_r)
+/obj/effect/gibspawner/trollbodypartless/b
+	gibtypes=list(/obj/effect/decal/cleanable/blood/gibs/troll_b, /obj/effect/decal/cleanable/blood/gibs/core/troll_b, /obj/effect/decal/cleanable/blood/gibs/troll_b, /obj/effect/decal/cleanable/blood/gibs/core/troll_b, /obj/effect/decal/cleanable/blood/gibs/troll_b, /obj/effect/decal/cleanable/blood/gibs/torso/troll_b)
+/obj/effect/gibspawner/trollbodypartless/y
+	gibtypes=list(/obj/effect/decal/cleanable/blood/gibs/troll_y, /obj/effect/decal/cleanable/blood/gibs/core/troll_y, /obj/effect/decal/cleanable/blood/gibs/troll_y, /obj/effect/decal/cleanable/blood/gibs/core/troll_y, /obj/effect/decal/cleanable/blood/gibs/troll_y, /obj/effect/decal/cleanable/blood/gibs/torso/troll_y)
+/obj/effect/gibspawner/trollbodypartless/l
+	gibtypes=list(/obj/effect/decal/cleanable/blood/gibs/troll_l, /obj/effect/decal/cleanable/blood/gibs/core/troll_l, /obj/effect/decal/cleanable/blood/gibs/troll_l, /obj/effect/decal/cleanable/blood/gibs/core/troll_l, /obj/effect/decal/cleanable/blood/gibs/troll_l, /obj/effect/decal/cleanable/blood/gibs/torso/troll_l)
+/obj/effect/gibspawner/trollbodypartless/o
+	gibtypes=list(/obj/effect/decal/cleanable/blood/gibs/troll_o, /obj/effect/decal/cleanable/blood/gibs/core/troll_o, /obj/effect/decal/cleanable/blood/gibs/troll_o, /obj/effect/decal/cleanable/blood/gibs/core/troll_o, /obj/effect/decal/cleanable/blood/gibs/troll_o, /obj/effect/decal/cleanable/blood/gibs/torso/troll_o)
+/obj/effect/gibspawner/trollbodypartless/j
+	gibtypes=list(/obj/effect/decal/cleanable/blood/gibs/troll_j, /obj/effect/decal/cleanable/blood/gibs/core/troll_j, /obj/effect/decal/cleanable/blood/gibs/troll_j, /obj/effect/decal/cleanable/blood/gibs/core/troll_j, /obj/effect/decal/cleanable/blood/gibs/troll_j, /obj/effect/decal/cleanable/blood/gibs/torso/troll_j)
+/obj/effect/gibspawner/trollbodypartless/t
+	gibtypes=list(/obj/effect/decal/cleanable/blood/gibs/troll_t, /obj/effect/decal/cleanable/blood/gibs/core/troll_t, /obj/effect/decal/cleanable/blood/gibs/troll_t, /obj/effect/decal/cleanable/blood/gibs/core/troll_t, /obj/effect/decal/cleanable/blood/gibs/troll_t, /obj/effect/decal/cleanable/blood/gibs/torso/troll_t)
+/obj/effect/gibspawner/trollbodypartless/c
+	gibtypes=list(/obj/effect/decal/cleanable/blood/gibs/troll_c, /obj/effect/decal/cleanable/blood/gibs/core/troll_c, /obj/effect/decal/cleanable/blood/gibs/troll_c, /obj/effect/decal/cleanable/blood/gibs/core/troll_c, /obj/effect/decal/cleanable/blood/gibs/troll_c, /obj/effect/decal/cleanable/blood/gibs/torso/troll_c)
+/obj/effect/gibspawner/trollbodypartless/i
+	gibtypes=list(/obj/effect/decal/cleanable/blood/gibs/troll_i, /obj/effect/decal/cleanable/blood/gibs/core/troll_i, /obj/effect/decal/cleanable/blood/gibs/troll_i, /obj/effect/decal/cleanable/blood/gibs/core/troll_i, /obj/effect/decal/cleanable/blood/gibs/troll_i, /obj/effect/decal/cleanable/blood/gibs/torso/troll_i)
+/obj/effect/gibspawner/trollbodypartless/p
+	gibtypes=list(/obj/effect/decal/cleanable/blood/gibs/troll_p, /obj/effect/decal/cleanable/blood/gibs/core/troll_p, /obj/effect/decal/cleanable/blood/gibs/troll_p, /obj/effect/decal/cleanable/blood/gibs/core/troll_p, /obj/effect/decal/cleanable/blood/gibs/troll_p, /obj/effect/decal/cleanable/blood/gibs/torso/troll_p)
+/obj/effect/gibspawner/trollbodypartless/v
+	gibtypes=list(/obj/effect/decal/cleanable/blood/gibs/troll_v, /obj/effect/decal/cleanable/blood/gibs/core/troll_v, /obj/effect/decal/cleanable/blood/gibs/troll_v, /obj/effect/decal/cleanable/blood/gibs/core/troll_v, /obj/effect/decal/cleanable/blood/gibs/troll_v, /obj/effect/decal/cleanable/blood/gibs/torso/troll_v)
+/obj/effect/gibspawner/trollbodypartless/f
+	gibtypes=list(/obj/effect/decal/cleanable/blood/gibs/troll_f, /obj/effect/decal/cleanable/blood/gibs/core/troll_f, /obj/effect/decal/cleanable/blood/gibs/troll_f, /obj/effect/decal/cleanable/blood/gibs/core/troll_f, /obj/effect/decal/cleanable/blood/gibs/troll_f, /obj/effect/decal/cleanable/blood/gibs/torso/troll_f)
+
 
 /obj/effect/gibspawner/xeno
 	gibtypes = list(/obj/effect/decal/cleanable/xenoblood/xgibs/up, /obj/effect/decal/cleanable/xenoblood/xgibs/down, /obj/effect/decal/cleanable/xenoblood/xgibs, /obj/effect/decal/cleanable/xenoblood/xgibs, /obj/effect/decal/cleanable/xenoblood/xgibs/body, /obj/effect/decal/cleanable/xenoblood/xgibs/limb, /obj/effect/decal/cleanable/xenoblood/xgibs/core)
@@ -85,6 +155,7 @@
 	gibtypes = list(/obj/effect/decal/cleanable/xenoblood/xgibs, /obj/effect/decal/cleanable/xenoblood/xgibs/core, /obj/effect/decal/cleanable/xenoblood/xgibs, /obj/effect/decal/cleanable/xenoblood/xgibs/core, /obj/effect/decal/cleanable/xenoblood/xgibs, /obj/effect/decal/cleanable/xenoblood/xgibs/torso)
 	gibamounts = list(1, 1, 1, 1, 1, 1)
 
+/obj/effect/gibspawner
 
 /obj/effect/gibspawner/xenobodypartless/Initialize()
 	playsound(src, 'sound/effects/blobattack.ogg', 60, 1)
