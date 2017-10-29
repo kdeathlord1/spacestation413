@@ -359,7 +359,7 @@
 	icon_state = "poster36"
 
 /obj/structure/sign/poster/contraband/robust_softdrinks
-	name = "Heir Transparent
+	name = "Heir Transparent"
 	desc = "Haha what are you saying this is a perfectly normal hideously long arm, foreshortening and such."
 	icon_state = "poster37"
 

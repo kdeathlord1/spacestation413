@@ -3,7 +3,8 @@
  *	Basically everything except the original is a kit (starts full).
  *
  *	Contains:
- *		Empty box, starter boxes (survival/engineer),
+ *		Empty box, starter boxes (
+ /engineer),
  *		Latex glove and sterile mask boxes,
  *		Syringe, beaker, dna injector boxes,
  *		Blanks, flashbangs, and EMP grenade boxes,
@@ -90,6 +91,8 @@
 	new /obj/item/clothing/mask/breath(src)
 	new /obj/item/tank/internals/emergency_oxygen(src)
 	new /obj/item/reagent_containers/hypospray/medipen(src)
+	new /obj/item/poster/random_contraband(src)
+	new /obj/item/poster/random_official(src)
 
 /obj/item/storage/box/survival/radio/PopulateContents()
 	..() // we want the survival stuff too.
@@ -100,6 +103,8 @@
 	new /obj/item/tank/internals/emergency_oxygen/engi(src)
 	new /obj/item/crowbar/red(src)
 	new /obj/item/reagent_containers/hypospray/medipen(src)
+	new /obj/item/poster/random_contraband(src)
+	new /obj/item/poster/random_official(src)
 
 
 // Engineer survival box
@@ -107,6 +112,8 @@
 	new /obj/item/clothing/mask/breath(src)
 	new /obj/item/tank/internals/emergency_oxygen/engi(src)
 	new /obj/item/reagent_containers/hypospray/medipen(src)
+	new /obj/item/poster/random_contraband(src)
+	new /obj/item/poster/random_official(src)
 
 /obj/item/storage/box/engineer/radio/PopulateContents()
 	..() // we want the regular items too.
@@ -122,6 +129,8 @@
 	new /obj/item/clothing/mask/gas/sechailer(src)
 	new /obj/item/tank/internals/emergency_oxygen(src)
 	new /obj/item/reagent_containers/hypospray/medipen(src)
+	new /obj/item/poster/random_contraband(src)
+	new /obj/item/poster/random_official(src)
 
 /obj/item/storage/box/security/radio/PopulateContents()
 	..() // we want the regular stuff too
@@ -639,6 +648,8 @@ obj/item/storage/box/clown
 	new /obj/item/clothing/mask/breath(src)
 	new /obj/item/tank/internals/emergency_oxygen(src)
 	new /obj/item/reagent_containers/hypospray/medipen(src)
+	new /obj/item/poster/random_contraband(src)
+	new /obj/item/poster/random_official(src)
 
 /obj/item/storage/box/rubbershot
 	name = "box of rubber shots"
