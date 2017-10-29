@@ -121,37 +121,253 @@
 /obj/effect/decal/cleanable/blood/gibs/troll_r
 	icon = 'icons/effects/bloodr.dmi'
 
+/obj/effect/decal/cleanable/blood/gibs/up/troll_r
+	icon = 'icons/effects/bloodr.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/down/troll_r
+	icon = 'icons/effects/bloodr.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/body/troll_r
+	icon = 'icons/effects/bloodr.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/torso/troll_r
+	icon = 'icons/effects/bloodr.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/limb/troll_r
+	icon = 'icons/effects/bloodr.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/core/troll_r
+	icon = 'icons/effects/bloodr.dmi'
+
 /obj/effect/decal/cleanable/blood/gibs/troll_b
+	icon = 'icons/effects/bloodb.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/up/troll_b
+	icon = 'icons/effects/bloodb.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/down/troll_b
+	icon = 'icons/effects/bloodb.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/body/troll_b
+	icon = 'icons/effects/bloodb.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/torso/troll_b
+	icon = 'icons/effects/bloodb.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/limb/troll_b
+	icon = 'icons/effects/bloodb.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/core/troll_b
 	icon = 'icons/effects/bloodb.dmi'
 
 /obj/effect/decal/cleanable/blood/gibs/troll_y
 	icon = 'icons/effects/bloody.dmi'
 
+/obj/effect/decal/cleanable/blood/gibs/up/troll_y
+	icon = 'icons/effects/bloody.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/down/troll_y
+	icon = 'icons/effects/bloody.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/body/troll_y
+	icon = 'icons/effects/bloody.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/torso/troll_y
+	icon = 'icons/effects/bloody.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/limb/troll_y
+	icon = 'icons/effects/bloody.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/core/troll_y
+	icon = 'icons/effects/bloody.dmi'
+
 /obj/effect/decal/cleanable/blood/gibs/troll_l
+	icon = 'icons/effects/bloodl.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/up/troll_l
+	icon = 'icons/effects/bloodl.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/down/troll_l
+	icon = 'icons/effects/bloodl.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/body/troll_l
+	icon = 'icons/effects/bloodl.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/torso/troll_l
+	icon = 'icons/effects/bloodl.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/limb/troll_l
+	icon = 'icons/effects/bloodl.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/core/troll_l
 	icon = 'icons/effects/bloodl.dmi'
 
 /obj/effect/decal/cleanable/blood/gibs/troll_o
 	icon = 'icons/effects/bloodo.dmi'
 
+/obj/effect/decal/cleanable/blood/gibs/up/troll_o
+	icon = 'icons/effects/bloodo.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/down/troll_o
+	icon = 'icons/effects/bloodo.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/body/troll_o
+	icon = 'icons/effects/bloodo.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/torso/troll_o
+	icon = 'icons/effects/bloodo.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/limb/troll_o
+	icon = 'icons/effects/bloodo.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/core/troll_o
+	icon = 'icons/effects/bloodo.dmi'
+
 /obj/effect/decal/cleanable/blood/gibs/troll_j
+	icon = 'icons/effects/bloodj.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/up/troll_j
+	icon = 'icons/effects/bloodj.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/down/troll_j
+	icon = 'icons/effects/bloodj.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/body/troll_j
+	icon = 'icons/effects/bloodj.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/torso/troll_j
+	icon = 'icons/effects/bloodj.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/limb/troll_j
+	icon = 'icons/effects/bloodj.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/core/troll_j
 	icon = 'icons/effects/bloodj.dmi'
 
 /obj/effect/decal/cleanable/blood/gibs/troll_t
 	icon = 'icons/effects/bloodt.dmi'
 
+/obj/effect/decal/cleanable/blood/gibs/up/troll_t
+	icon = 'icons/effects/bloodt.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/down/troll_t
+	icon = 'icons/effects/bloodt.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/body/troll_t
+	icon = 'icons/effects/bloodt.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/torso/troll_t
+	icon = 'icons/effects/bloodt.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/limb/troll_t
+	icon = 'icons/effects/bloodt.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/core/troll_t
+	icon = 'icons/effects/bloodt.dmi'
+
 /obj/effect/decal/cleanable/blood/gibs/troll_c
+	icon = 'icons/effects/bloodc.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/up/troll_c
+	icon = 'icons/effects/bloodc.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/down/troll_c
+	icon = 'icons/effects/bloodc.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/body/troll_c
+	icon = 'icons/effects/bloodc.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/torso/troll_c
+	icon = 'icons/effects/bloodc.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/limb/troll_c
+	icon = 'icons/effects/bloodc.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/core/troll_c
 	icon = 'icons/effects/bloodc.dmi'
 
 /obj/effect/decal/cleanable/blood/gibs/troll_i
 	icon = 'icons/effects/bloodi.dmi'
 
+/obj/effect/decal/cleanable/blood/gibs/up/troll_i
+	icon = 'icons/effects/bloodi.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/down/troll_i
+	icon = 'icons/effects/bloodi.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/body/troll_i
+	icon = 'icons/effects/bloodi.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/torso/troll_i
+	icon = 'icons/effects/bloodi.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/limb/troll_i
+	icon = 'icons/effects/bloodi.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/core/troll_i
+	icon = 'icons/effects/bloodi.dmi'
+
 /obj/effect/decal/cleanable/blood/gibs/troll_p
+	icon = 'icons/effects/bloodp.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/up/troll_p
+	icon = 'icons/effects/bloodp.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/down/troll_p
+	icon = 'icons/effects/bloodp.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/body/troll_p
+	icon = 'icons/effects/bloodp.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/torso/troll_p
+	icon = 'icons/effects/bloodp.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/limb/troll_p
+	icon = 'icons/effects/bloodp.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/core/troll_p
 	icon = 'icons/effects/bloodp.dmi'
 
 /obj/effect/decal/cleanable/blood/gibs/troll_v
 	icon = 'icons/effects/bloodv.dmi'
 
+/obj/effect/decal/cleanable/blood/gibs/up/troll_v
+	icon = 'icons/effects/bloodv.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/down/troll_v
+	icon = 'icons/effects/bloodv.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/body/troll_v
+	icon = 'icons/effects/bloodv.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/torso/troll_v
+	icon = 'icons/effects/bloodv.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/limb/troll_v
+	icon = 'icons/effects/bloodv.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/core/troll_v
+	icon = 'icons/effects/bloodv.dmi'
+
 /obj/effect/decal/cleanable/blood/gibs/troll_f
+	icon = 'icons/effects/bloodf.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/up/troll_f
+	icon = 'icons/effects/bloodf.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/down/troll_f
+	icon = 'icons/effects/bloodf.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/body/troll_f
+	icon = 'icons/effects/bloodf.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/torso/troll_f
+	icon = 'icons/effects/bloodf.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/limb/troll_f
+	icon = 'icons/effects/bloodf.dmi'
+
+/obj/effect/decal/cleanable/blood/gibs/core/troll_f
 	icon = 'icons/effects/bloodf.dmi'
 
 /obj/effect/decal/cleanable/blood/drip/troll_r
