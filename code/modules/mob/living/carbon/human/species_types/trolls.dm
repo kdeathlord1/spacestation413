@@ -10,6 +10,7 @@
 	fixed_mut_color="c4c4c4"
 	hair_color="000000"
 	limbs_id = "human"
+	exotic_bloodtype = "T"
 	skinned_type = /obj/item/stack/sheet/animalhide/human
 	disliked_food = GROSS | DAIRY
 	liked_food = JUNKFOOD | MEAT
