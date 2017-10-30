@@ -156,7 +156,7 @@
 /mob/living/proc/get_blood_data(blood_id)
 	return
 
-/mob/living/carbon/get_blood_data(blood_id)
+/mob/living/carbon/get_blood_data(blood_id,color)
 	if(blood_id == "blood") //actual blood reagent
 		var/blood_data = list()
 		//set the blood data
@@ -170,6 +170,8 @@
 		blood_data["blood_DNA"] = copytext(dna.unique_enzymes,1,0)
 		if(resistances && resistances.len)
 			blood_data["resistances"] = resistances.Copy()
+		if(color)
+			blood_data["color"]="#"+color
 		var/list/temp_chem = list()
 		for(var/datum/reagent/R in reagents.reagent_list)
 			temp_chem[R.id] = R.volume
@@ -191,6 +193,12 @@
 		blood_data["features"] = dna.features
 		blood_data["factions"] = faction
 		return blood_data
+
+mob/living/carbon/human/get_blood_data(blood_id)
+	var/color
+	if((blood_id == "blood") && (dna.species.has_castes))
+		color = get_color_from_caste(troll_caste)
+	return ..(blood_id,color)
 
 //get the id of the substance this mob use as blood.
 /mob/proc/get_blood_id()
@@ -227,7 +235,8 @@
 		"O-" = list("O-"),
 		"O+" = list("O-", "O+"),
 		"L" = list("L"),
-		"U" = list("A-", "A+", "B-", "B+", "O-", "O+", "AB-", "AB+", "L", "U")
+		"U" = list("A-", "A+", "B-", "B+", "O-", "O+", "AB-", "AB+", "L", "U"),
+		"T" = list("T")
 	)
 
 	var/safe = bloodtypes_safe[bloodtype]

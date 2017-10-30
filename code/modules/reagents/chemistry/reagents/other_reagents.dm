@@ -1,5 +1,5 @@
 /datum/reagent/blood
-	data = list("donor"=null,"viruses"=null,"blood_DNA"=null,"blood_type"=null,"resistances"=null,"trace_chem"=null,"mind"=null,"ckey"=null,"gender"=null,"real_name"=null,"cloneable"=null,"factions"=null)
+	data = list("donor"=null,"viruses"=null,"blood_DNA"=null,"blood_type"=null,"resistances"=null,"trace_chem"=null,"mind"=null,"ckey"=null,"gender"=null,"real_name"=null,"cloneable"=null,"factions"=null,"color"=null)
 	name = "Blood"
 	id = "blood"
 	color = "#C80000" // rgb: 200, 0, 0
@@ -36,6 +36,8 @@
 /datum/reagent/blood/on_new(list/data)
 	if(istype(data))
 		SetViruses(src, data)
+		if("color" in data)
+			color=data["color"]
 
 /datum/reagent/blood/on_merge(list/mix_data)
 	if(data && mix_data)

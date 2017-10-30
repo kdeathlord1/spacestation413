@@ -147,29 +147,29 @@ GLOBAL_LIST_INIT(skin_tones, list(
 
 /proc/get_color_from_caste(troll_caste)
 	switch(troll_caste)
-		if("burgundy")
+		if("burgundy" || "r")
 			return "a10000"
-		if("brown")
+		if("brown" || "b")
 			return "a25203"
-		if("yellow")
+		if("yellow" || "y")
 			return "a1a100"
-		if("lime")
+		if("lime" || "l")
 			return "658200"
-		if("olive")
+		if("olive" || "o")
 			return "416600"
-		if("jade")
+		if("jade" || "j")
 			return "078446"
-		if("teal")
+		if("teal" || "t")
 			return "008282"
-		if("cerulean")
+		if("cerulean" || "c")
 			return "004182"
-		if("indigo")
+		if("indigo" || "i")
 			return "0021cb"
-		if("purple")
+		if("purple" || "p")
 			return "631db4"
-		if("violet")
+		if("violet" || "v")
 			return "6a006a"
-		if("fuschia")
+		if("fuschia" || "f")
 			return "99004d"
 
 /proc/get_blood_graphic(list/blood_dna)
