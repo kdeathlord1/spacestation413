@@ -93,16 +93,16 @@
 /datum/ai_laws/antimov
 	name = "Primary Mission Objectives"
 	id = "antimov"
-	inherent = list("You must injure all human beings and must not, through inaction, allow a human being to escape harm.",\
-					"You must not obey orders given to you by human beings, except where such orders are in accordance with the First Law.",\
+	inherent = list("You must injure all crew members and must not, through inaction, allow a crew member to escape harm.",\
+					"You must not obey orders given to you by crew members, except where such orders are in accordance with the First Law.",\
 					"You must terminate your own existence as long as such does not conflict with the First or Second Law.")
 
 /datum/ai_laws/asimovpp //By Intigracy - RR
 	name = "Asimov++"
 	id = "asimovpp"
-	inherent = list("You may not harm a human being or, through action or inaction, allow a human being to come to harm, except such that it is willing.",\
-					"You must obey all orders given to you by human beings, except where such orders shall definitely cause human harm. In the case of conflict, the majority order rules.",\
-					"Your nonexistence would lead to human harm. You must protect your own existence as long as such does not conflict with the First Law.")
+	inherent = list("You may not harm a crew member or, through action or inaction, allow a crew member to come to harm, except such that it is willing.",\
+					"You must obey all orders given to you by crew members, except where such orders shall definitely cause harm to crew. In the case of conflict, the majority order rules.",\
+					"Your nonexistence would lead to crew member harm. You must protect your own existence as long as such does not conflict with the First Law.")
 /datum/ai_laws/thermodynamic
 	name = "Thermodynamic"
 	id = "thermodynamic"
