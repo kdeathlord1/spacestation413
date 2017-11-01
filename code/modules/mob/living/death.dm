@@ -55,6 +55,7 @@
 	if(mind && mind.name && mind.active && (!(T.flags_1 & NO_DEATHRATTLE_1)))
 		var/rendered = "<span class='deadsay'><b>[mind.name]</b> has died at <b>[A.name]</b>.</span>"
 		deadchat_broadcast(rendered, follow_target = src, turf_target = T, message_type=DEADCHAT_DEATHRATTLE)
+		playsound(src, 'sound/effects/death.ogg', 150, FALSE)
 	if(mind)
 		mind.store_memory("Time of death: [tod]", 0)
 	GLOB.living_mob_list -= src
