@@ -388,3 +388,9 @@ HIGH_POP_MC_MODE_AMOUNT 65
 
 ##Disengage high pop mode if player count drops below this
 DISABLE_HIGH_POP_MC_MODE_AMOUNT 60
+
+##Chance of a traitor to have a "hijack the shuttle" objective
+TRAITOR_HIJACK_CHANCE 10
+
+##Chance of an individual traitor objective to be not based on murder or destruction of property
+TRAITOR_NONDESTROY_CHANCE 50
