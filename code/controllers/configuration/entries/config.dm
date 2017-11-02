@@ -371,6 +371,9 @@ CONFIG_DEF(number/traitor_hijack_chance)
 CONFIG_DEF(number/traitor_nondestroy_chance)
 	value = 50
 
+CONFIG_DEF(number/traitor_martyr_chance)
+	value = 20
+
 CONFIG_TWEAK(number/mc_tick_rate)
 	abstract_type = /datum/config_entry/number/mc_tick_rate
 
