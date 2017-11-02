@@ -80,7 +80,7 @@
 /datum/antagonist/traitor/proc/forge_traitor_objectives()
 	return
 /datum/antagonist/traitor/human/forge_traitor_objectives()
-	var/is_hijacker = prob(10)
+	var/is_hijacker = prob(CONFIG_GET(number/traitor_hijack_chance))
 	var/martyr_chance = prob(20)
 	var/objective_count = is_hijacker 			//Hijacking counts towards number of objectives
 	if(!SSticker.mode.exchange_blue && SSticker.mode.traitors.len >= 8) 	//Set up an exchange if there are enough traitors
@@ -141,7 +141,7 @@
 	return 0
 /datum/antagonist/traitor/human/forge_single_objective() //Returns how many objectives are added
 	.=1
-	if(prob(50))
+	if(prob(CONFIG_GET(number/traitor_nondestroy_chance)))
 		var/list/active_ais = active_ais()
 		if(active_ais.len && prob(100/GLOB.joined_player_list.len))
 			var/datum/objective/destroy/destroy_objective = new
