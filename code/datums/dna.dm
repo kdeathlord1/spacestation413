@@ -133,7 +133,7 @@
 		if(DNA_TROLL_HORNS_BLOCK)
 			setblock(uni_identity, blocknumber, construct_block(GLOB.troll_horns_list.Find(H.troll_horn),GLOB.troll_horns_list.len))
 		if(DNA_TROLL_CASTE_BLOCK)
-			setblock(uni_identity, blucknumber, construct_block(GLOB.troll_castes.Find(H.troll_caste),GLOB.troll_castes.len))
+			setblock(uni_identity, blocknumber, construct_block(GLOB.troll_castes.Find(H.troll_caste),GLOB.troll_castes.len))
 
 /datum/dna/proc/mutations_say_mods(message)
 	if(message)
