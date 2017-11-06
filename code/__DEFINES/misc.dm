@@ -203,21 +203,21 @@ GLOBAL_LIST_EMPTY(bloody_footprints_cache)
 #define BLOOD_FADEOUT_TIME			2
 
 //Bloody shoe blood states
-#define BLOOD_STATE_HUMAN			"blood"
-#define BLOOD_STATE_XENO			"xeno"
-#define BLOOD_STATE_OIL				"oil"
-#define BLOOD_STATE_TROLL_BURGUNDY  "bloodr"
-#define BLOOD_STATE_TROLL_BROWN     "bloodb" //technically "umber"
-#define BLOOD_STATE_TROLL_YELLOW    "bloody" //technically "ochre", for some reason
-#define BLOOD_STATE_TROLL_LIME      "bloodl" //technically "yellowgreen"
-#define BLOOD_STATE_TROLL_OLIVE     "bloodo"
-#define BLOOD_STATE_TROLL_JADE      "bloodj"
-#define BLOOD_STATE_TROLL_TEAL      "bloodt"
-#define BLOOD_STATE_TROLL_CERULEAN  "bloodc"
-#define BLOOD_STATE_TROLL_INDIGO    "bloodi"
-#define BLOOD_STATE_TROLL_PURPLE    "bloodp"
-#define BLOOD_STATE_TROLL_VIOLET    "bloodv"
-#define BLOOD_STATE_TROLL_FUSCHIA   "bloodf"
+#define BLOOD_STATE_HUMAN			"#aa0606"
+#define BLOOD_STATE_XENO			"#88aa00"
+#define BLOOD_STATE_OIL				"#000000"
+#define BLOOD_STATE_TROLL_BURGUNDY  "#a10000"
+#define BLOOD_STATE_TROLL_BROWN     "#a25203" //technically "umber"
+#define BLOOD_STATE_TROLL_YELLOW    "#a1a100" //technically "ochre", for some reason
+#define BLOOD_STATE_TROLL_LIME      "#658200" //technically "yellowgreen"
+#define BLOOD_STATE_TROLL_OLIVE     "#416600"
+#define BLOOD_STATE_TROLL_JADE      "#078446"
+#define BLOOD_STATE_TROLL_TEAL      "#008282"
+#define BLOOD_STATE_TROLL_CERULEAN  "#004182"
+#define BLOOD_STATE_TROLL_INDIGO    "#0021cb"
+#define BLOOD_STATE_TROLL_PURPLE    "#631db4"
+#define BLOOD_STATE_TROLL_VIOLET    "#6a006a"
+#define BLOOD_STATE_TROLL_FUSCHIA   "#99004d"
 #define BLOOD_STATE_NOT_BLOODY		"no blood whatsoever"
 
 //suit sensors: sensor_mode defines
