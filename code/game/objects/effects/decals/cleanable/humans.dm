@@ -125,7 +125,7 @@
 	random_icon_states = null
 	var/entered_dirs = 0
 	var/exited_dirs = 0
-	blood_state = BLOOD_STATE_HUMAN //the icon state to load images from
+	blood_state = BLOOD_STATE_HUMAN //the color to blend the footprints with
 	var/list/shoe_types = list()
 
 /obj/effect/decal/cleanable/blood/footprints/Crossed(atom/movable/O)
@@ -160,12 +160,16 @@
 		if(entered_dirs & Ddir)
 			var/image/bloodstep_overlay = GLOB.bloody_footprints_cache["entered-[blood_state]-[Ddir]"]
 			if(!bloodstep_overlay)
-				GLOB.bloody_footprints_cache["entered-[blood_state]-[Ddir]"] = bloodstep_overlay = image(icon, "[blood_state]1", dir = Ddir)
+				var/icon/colored_footstep=new(icon)
+				colored_footstep.Blend(blood_state,ICON_MULTIPLY)
+				GLOB.bloody_footprints_cache["entered-[blood_state]-[Ddir]"] = bloodstep_overlay = image(colored_footstep, "blood1", dir = Ddir)
 			add_overlay(bloodstep_overlay)
 		if(exited_dirs & Ddir)
 			var/image/bloodstep_overlay = GLOB.bloody_footprints_cache["exited-[blood_state]-[Ddir]"]
 			if(!bloodstep_overlay)
-				GLOB.bloody_footprints_cache["exited-[blood_state]-[Ddir]"] = bloodstep_overlay = image(icon, "[blood_state]2", dir = Ddir)
+				var/icon/colored_footstep=new(icon)
+				colored_footstep.Blend(blood_state,ICON_MULTIPLY)
+				GLOB.bloody_footprints_cache["exited-[blood_state]-[Ddir]"] = bloodstep_overlay = image(colored_footstep, "blood2", dir = Ddir)
 			add_overlay(bloodstep_overlay)
 
 	alpha = BLOODY_FOOTPRINT_BASE_ALPHA+bloodiness
@@ -182,8 +186,7 @@
 	to_chat(user, .)
 
 /obj/effect/decal/cleanable/blood/footprints/replace_decal(obj/effect/decal/cleanable/C)
-	if(blood_state != C.blood_state) //We only replace footprints of the same type as us
-		return
+	blood_state=BlendRGB(blood_state,C.blood_state,(bloodiness/C.bloodiness))
 	..()
 
 /obj/effect/decal/cleanable/blood/footprints/can_bloodcrawl_in()
