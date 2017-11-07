@@ -186,8 +186,7 @@
 	to_chat(user, .)
 
 /obj/effect/decal/cleanable/blood/footprints/replace_decal(obj/effect/decal/cleanable/C)
-	if(blood_state != C.blood_state) //We only replace footprints of the same type as us
-		return
+	blood_state=BlendRGB(blood_state,C.blood_state,(bloodiness/C.bloodiness))
 	..()
 
 /obj/effect/decal/cleanable/blood/footprints/can_bloodcrawl_in()
