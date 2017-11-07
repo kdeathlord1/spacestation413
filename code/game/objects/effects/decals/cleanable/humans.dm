@@ -186,7 +186,8 @@
 	to_chat(user, .)
 
 /obj/effect/decal/cleanable/blood/footprints/replace_decal(obj/effect/decal/cleanable/C)
-	blood_state=BlendRGB(blood_state,C.blood_state,(arctan(C.bloodiness/bloodiness))*(2/PI))
+	bloodiness=min(MAX_SHOE_BLOODINESS,bloodiness+C.bloodiness)
+	blood_state=BlendRGB(blood_state,C.blood_state,C.bloodiness/bloodiness)
 	..()
 
 /obj/effect/decal/cleanable/blood/footprints/can_bloodcrawl_in()
