@@ -190,13 +190,13 @@ CHECK_RANDOMIZER
 FORUMURL http://discord.gg/homestuck
 
 ## Wiki address
-WIKIURL http://discord.gg/homestuck
+# WIKIURL http://www.tgstation13.org/wiki
 
 ## Rules address
 RULESURL http://discord.gg/homestuck
 
 ## Github address
-GITHUBURL http://discord.gg/homestuck
+GITHUBURL https://www.github.com/recordcrash/spacestation413
 
 ## Github repo id
 ##This can be found by going to https://api.github.com/users/<user name here>/repos
