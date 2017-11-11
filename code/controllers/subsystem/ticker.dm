@@ -148,7 +148,7 @@ SUBSYSTEM_DEF(ticker)
 					++totalPlayers
 					if(player.ready == PLAYER_READY_TO_PLAY)
 						++totalPlayersReady
-				SERVER_TOOLS_DISCORD_WEBHOOK_BROADCAST("New round starting on [SSmapping.config.map_name]!\nInitial player count: [totalPlayersReady]")
+				SERVER_TOOLS_DISCORD_WEBHOOK_BROADCAST("<@&379039468822331423>\nNew round starting on [SSmapping.config.map_name]!\nInitial player count: [totalPlayersReady]")
 			current_state = GAME_STATE_PREGAME
 			//Everyone who wants to be an observer is now spawned
 			create_observers()
