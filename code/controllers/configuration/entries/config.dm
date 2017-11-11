@@ -348,6 +348,10 @@ CONFIG_DEF(number/error_msg_delay)	// How long to wait between messaging admins 
 	value = 50
 
 CONFIG_DEF(flag/irc_announce_new_game)
+CONFIG_DEF(flag/discord_announce_new_game)
+
+CONFIG_DEF(string/discord_webhook_script_address)
+	value = "localhost:4130"
 
 CONFIG_DEF(flag/debug_admin_hrefs)
 
