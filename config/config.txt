@@ -370,7 +370,7 @@ MINUTE_TOPIC_LIMIT 100
 DISCORD_ANNOUNCE_NEW_GAME
 
 ## Address the Discord webhook script (tools/discord_webhook_helper/) is listening to
-#ISCORD_WEBHOOK_SCRIPT_ADDRESS localhost:4310
+DISCORD_WEBHOOK_SCRIPT_ADDRESS localhost:4310
 
 ## Allow admin hrefs that don't use the new token system, will eventually be removed
 DEBUG_ADMIN_HREFS
