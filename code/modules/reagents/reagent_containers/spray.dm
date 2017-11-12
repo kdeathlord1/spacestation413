@@ -248,10 +248,3 @@
 	righthand_file = 'icons/mob/inhands/equipment/hydroponics_righthand.dmi'
 	volume = 100
 	list_reagents = list("plantbgone" = 100)
-
-// gray cosplay face paint
-/obj/item/reagent_containers/spray/graypaint
-	name = "gray face paint"
-	volume = 50
-	desc = "Gyaroo brand spraypaint. Do not spray near eyes or other orifices. Do not swim after application."
-	list_reagents = list("graypaint" = 50)

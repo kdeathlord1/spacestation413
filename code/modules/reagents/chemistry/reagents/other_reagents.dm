@@ -1687,28 +1687,3 @@
 	description = "blue sparkles that get everywhere"
 	color = "#4040FF" //A blueish color
 	glitter_type = /obj/effect/decal/cleanable/glitter/blue
-
-/datum/reagent/graypaint
-	name = "gray cosplay face paint"
-	id = "graypaint"
-	description = "A substance applied to the skin to grant all of the user's wildest dreams."
-	color = "#c4c4c4"
-	metabolization_rate = 10 * REAGENTS_METABOLISM
-	overdose_threshold = 11
-	taste_description = "cement"
-
-/datum/reagent/graypaint/reaction_mob(mob/living/M, method=TOUCH, reac_volume, show_message = 1)
-	if(ishuman(M))
-		if(method == PATCH || method == VAPOR)
-			var/mob/living/carbon/human/N = M
-			if(!(MUTCOLORS in N.dna.species.species_traits))
-				N.dna.species.species_traits += MUTCOLORS
-			N.dna.species.use_skintones = 0
-			N.dna.species.fixed_mut_color = ""
-			N.dna.features["mcolor"] = "c4c4c4"
-			N.regenerate_icons()
-
-		if(method == INGEST)
-			if(show_message)
-				to_chat(M, "<span class='notice'>That tasted horrible.</span>")
-	..()
