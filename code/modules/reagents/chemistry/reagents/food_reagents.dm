@@ -618,3 +618,11 @@
 		M.adjustFireLoss(-1*REM, 0)
 		. = TRUE
 	..()
+
+/datum/reagent/consumable/gusher
+	name = "Fruit Gushers: Massive Tropical Brain Hemorrhage"
+	id = "gusher"
+	description = "C O N S U M E"
+	nutriment_factor = 3 * REAGENTS_METABOLISM
+	color = "#6A83FF" // rgb: 106, 131, 255
+	taste_description = "something fruity"
