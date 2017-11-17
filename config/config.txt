@@ -190,13 +190,13 @@ CHECK_RANDOMIZER
 FORUMURL http://discord.gg/homestuck
 
 ## Wiki address
-WIKIURL http://discord.gg/homestuck
+# WIKIURL http://www.tgstation13.org/wiki
 
 ## Rules address
 RULESURL http://discord.gg/homestuck
 
 ## Github address
-GITHUBURL http://discord.gg/homestuck
+GITHUBURL https://www.github.com/recordcrash/spacestation413
 
 ## Github repo id
 ##This can be found by going to https://api.github.com/users/<user name here>/repos
@@ -365,6 +365,12 @@ MINUTE_TOPIC_LIMIT 100
 
 ## Send a message to IRC when starting a new game
 #IRC_ANNOUNCE_NEW_GAME
+
+## Send a message to a Discord webhook when starting a new game
+DISCORD_ANNOUNCE_NEW_GAME
+
+## Address the Discord webhook script (tools/discord_webhook_helper/) is listening to
+DISCORD_WEBHOOK_SCRIPT_ADDRESS localhost:4310
 
 ## Allow admin hrefs that don't use the new token system, will eventually be removed
 DEBUG_ADMIN_HREFS

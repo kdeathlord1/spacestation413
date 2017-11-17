@@ -156,7 +156,7 @@
 /mob/living/proc/get_blood_data(blood_id)
 	return
 
-/mob/living/carbon/get_blood_data(blood_id)
+/mob/living/carbon/get_blood_data(blood_id,color)
 	if(blood_id == "blood") //actual blood reagent
 		var/blood_data = list()
 		//set the blood data
@@ -170,6 +170,8 @@
 		blood_data["blood_DNA"] = copytext(dna.unique_enzymes,1,0)
 		if(resistances && resistances.len)
 			blood_data["resistances"] = resistances.Copy()
+		if(color)
+			blood_data["color"]="#"+color
 		var/list/temp_chem = list()
 		for(var/datum/reagent/R in reagents.reagent_list)
 			temp_chem[R.id] = R.volume
@@ -191,6 +193,12 @@
 		blood_data["features"] = dna.features
 		blood_data["factions"] = faction
 		return blood_data
+
+mob/living/carbon/human/get_blood_data(blood_id)
+	var/color
+	if((blood_id == "blood") && (dna.species.has_castes))
+		color = get_color_from_caste(troll_caste)
+	return ..(blood_id,color)
 
 //get the id of the substance this mob use as blood.
 /mob/proc/get_blood_id()
@@ -227,7 +235,8 @@
 		"O-" = list("O-"),
 		"O+" = list("O-", "O+"),
 		"L" = list("L"),
-		"U" = list("A-", "A+", "B-", "B+", "O-", "O+", "AB-", "AB+", "L", "U")
+		"U" = list("A-", "A+", "B-", "B+", "O-", "O+", "AB-", "AB+", "L", "U"),
+		"T" = list("T")
 	)
 
 	var/safe = bloodtypes_safe[bloodtype]
@@ -235,7 +244,7 @@
 		. = safe
 
 //to add a splatter of blood or other mob liquid.
-/mob/living/proc/add_splatter_floor(turf/T, small_drip)
+/mob/living/proc/add_splatter_floor(turf/T, small_drip,blood_caste)
 	if(get_blood_id() != "blood")
 		return
 	if(!T)
@@ -256,21 +265,76 @@
 				temp_blood_DNA |= drop.blood_DNA.Copy() //we transfer the dna from the drip to the splatter
 				qdel(drop)//the drip is replaced by a bigger splatter
 		else
-			drop = new(T, get_static_viruses())
+			switch(blood_caste)
+				if("burgundy")
+					drop = new /obj/effect/decal/cleanable/blood/drip/troll_r(T,get_static_viruses())
+				if("brown")
+					drop = new /obj/effect/decal/cleanable/blood/drip/troll_b(T,get_static_viruses())
+				if("yellow")
+					drop = new /obj/effect/decal/cleanable/blood/drip/troll_y(T,get_static_viruses())
+				if("lime")
+					drop = new /obj/effect/decal/cleanable/blood/drip/troll_l(T,get_static_viruses())
+				if("olive")
+					drop = new /obj/effect/decal/cleanable/blood/drip/troll_o(T,get_static_viruses())
+				if("jade")
+					drop = new /obj/effect/decal/cleanable/blood/drip/troll_j(T,get_static_viruses())
+				if("teal")
+					drop = new /obj/effect/decal/cleanable/blood/drip/troll_t(T,get_static_viruses())
+				if("cerulean")
+					drop = new /obj/effect/decal/cleanable/blood/drip/troll_c(T,get_static_viruses())
+				if("indigo")
+					drop = new /obj/effect/decal/cleanable/blood/drip/troll_i(T,get_static_viruses())
+				if("purple")
+					drop = new /obj/effect/decal/cleanable/blood/drip/troll_p(T,get_static_viruses())
+				if("violet")
+					drop = new /obj/effect/decal/cleanable/blood/drip/troll_v(T,get_static_viruses())
+				if("fuschia")
+					drop = new /obj/effect/decal/cleanable/blood/drip/troll_f(T,get_static_viruses())
+				else
+					drop = new(T, get_static_viruses())
 			drop.transfer_mob_blood_dna(src)
 			return
 
 	// Find a blood decal or create a new one.
 	var/obj/effect/decal/cleanable/blood/B = locate() in T
 	if(!B)
-		B = new /obj/effect/decal/cleanable/blood/splatter(T, get_static_viruses())
+		switch(blood_caste)
+			if("burgundy")
+				B = new /obj/effect/decal/cleanable/blood/splatter/troll_r(T,get_static_viruses())
+			if("brown")
+				B = new /obj/effect/decal/cleanable/blood/splatter/troll_b(T,get_static_viruses())
+			if("yellow")
+				B = new /obj/effect/decal/cleanable/blood/splatter/troll_y(T,get_static_viruses())
+			if("lime")
+				B = new /obj/effect/decal/cleanable/blood/splatter/troll_l(T,get_static_viruses())
+			if("olive")
+				B = new /obj/effect/decal/cleanable/blood/splatter/troll_o(T,get_static_viruses())
+			if("jade")
+				B = new /obj/effect/decal/cleanable/blood/splatter/troll_j(T,get_static_viruses())
+			if("teal")
+				B = new /obj/effect/decal/cleanable/blood/splatter/troll_t(T,get_static_viruses())
+			if("cerulean")
+				B = new /obj/effect/decal/cleanable/blood/splatter/troll_c(T,get_static_viruses())
+			if("indigo")
+				B = new /obj/effect/decal/cleanable/blood/splatter/troll_i(T,get_static_viruses())
+			if("purple")
+				B = new /obj/effect/decal/cleanable/blood/splatter/troll_p(T,get_static_viruses())
+			if("violet")
+				B = new /obj/effect/decal/cleanable/blood/splatter/troll_v(T,get_static_viruses())
+			if("fuschia")
+				B = new /obj/effect/decal/cleanable/blood/splatter/troll_f(T,get_static_viruses())
+			else
+				B = new /obj/effect/decal/cleanable/blood/splatter(T, get_static_viruses())
 	B.transfer_mob_blood_dna(src) //give blood info to the blood decal.
 	if(temp_blood_DNA)
 		B.blood_DNA |= temp_blood_DNA
 
 /mob/living/carbon/human/add_splatter_floor(turf/T, small_drip)
 	if(!(NOBLOOD in dna.species.species_traits))
-		..()
+		if(dna.species.has_castes)
+			..(blood_caste=troll_caste)
+		else
+			..()
 
 /mob/living/carbon/alien/add_splatter_floor(turf/T, small_drip)
 	if(!T)

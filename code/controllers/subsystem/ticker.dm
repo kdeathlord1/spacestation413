@@ -140,6 +140,16 @@ SUBSYSTEM_DEF(ticker)
 			to_chat(world, "<span class='boldnotice'>Welcome to [station_name()]!</span>")
 			if(CONFIG_GET(flag/irc_announce_new_game))
 				SERVER_TOOLS_CHAT_BROADCAST("New round starting on [SSmapping.config.map_name]!")
+			if(CONFIG_GET(flag/discord_announce_new_game))
+				// count players
+				totalPlayers = 0
+				totalPlayersReady = 0
+				for(var/mob/dead/new_player/player in GLOB.player_list)
+					++totalPlayers
+					if(player.ready == PLAYER_READY_TO_PLAY)
+						++totalPlayersReady
+				if(totalPlayersReady > 3) // don't announce if there aren't enough ready players
+					SERVER_TOOLS_DISCORD_WEBHOOK_BROADCAST("<@&379039468822331423>\nNew round starting on [SSmapping.config.map_name]!\nInitial player count: [totalPlayersReady]")
 			current_state = GAME_STATE_PREGAME
 			//Everyone who wants to be an observer is now spawned
 			create_observers()

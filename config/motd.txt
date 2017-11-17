@@ -4,4 +4,6 @@
 
 <i>This server is running a /tg/station 13 Git build.</i>
 
+<i>Please <b><a style="color:#0000cc" href="https://goo.gl/1vTMtd">read the rules</a></color></b> before you play.</i>
+
 <i>Let's hope we don't get hacked again...</i>

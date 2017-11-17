@@ -114,6 +114,13 @@
 		if(i != attempts_to_find_unique_name && !findname(.))
 			break
 
+/proc/random_unique_troll_name(attempts_to_find_unique_name=10)
+	for(var/i=1, i<=attempts_to_find_unique_name, i++)
+		. = troll_name()
+
+		if(i != attempts_to_find_unique_name && !findname(.))
+			break
+
 /proc/random_skin_tone()
 	return pick(GLOB.skin_tones)
 
@@ -130,6 +137,57 @@ GLOBAL_LIST_INIT(skin_tones, list(
 	"indian",
 	"african1",
 	"african2"
+	))
+
+/proc/random_troll_caste()
+	return pick(GLOB.troll_castes)
+
+/proc/random_troll_horns()
+	return pick(GLOB.troll_horns_list)
+
+/proc/get_color_from_caste(troll_caste)
+	switch(troll_caste)
+		if("burgundy" || "r")
+			return "a10000"
+		if("brown" || "b")
+			return "a25203"
+		if("yellow" || "y")
+			return "a1a100"
+		if("lime" || "l")
+			return "658200"
+		if("olive" || "o")
+			return "416600"
+		if("jade" || "j")
+			return "078446"
+		if("teal" || "t")
+			return "008282"
+		if("cerulean" || "c")
+			return "004182"
+		if("indigo" || "i")
+			return "0021cb"
+		if("purple" || "p")
+			return "631db4"
+		if("violet" || "v")
+			return "6a006a"
+		if("fuschia" || "f")
+			return "99004d"
+
+/proc/get_blood_graphic(list/blood_dna)
+	return addtext("icons/effects/blood",blood_dna["color"],".dmi")
+
+GLOBAL_LIST_INIT(troll_castes, list(
+	"burgundy",
+	"brown",
+	"yellow",
+	"lime",
+	"olive",
+	"jade",
+	"teal",
+	"cerulean",
+	"indigo",
+	"purple",
+	"violet",
+	"fuschia"
 	))
 
 GLOBAL_LIST_EMPTY(species_list)

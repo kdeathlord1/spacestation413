@@ -284,7 +284,7 @@ GLOBAL_LIST_EMPTY(uplink_items) // Global list so we only initialize this once.
 	desc = "The double-bladed energy sword does slightly more damage than a standard energy sword and will deflect \
 			all energy projectiles, but requires two hands to wield."
 	item = /obj/item/twohanded/dualsaber
-	player_minimum = 25
+	player_minimum = 15
 	cost = 16
 
 /datum/uplink_item/dangerous/doublesword/get_discount()
@@ -377,7 +377,7 @@ GLOBAL_LIST_EMPTY(uplink_items) // Global list so we only initialize this once.
 	cost = 18
 	surplus = 0
 	exclude_modes = list(/datum/game_mode/nuclear)
-	player_minimum = 25
+	player_minimum = 18 //not 15 because this is basically WMD
 
 // Ammunition
 /datum/uplink_item/ammo
@@ -728,7 +728,7 @@ GLOBAL_LIST_EMPTY(uplink_items) // Global list so we only initialize this once.
 	item = /obj/item/storage/box/syndie_kit/chameleon
 	cost = 4
 	exclude_modes = list(/datum/game_mode/nuclear)
-	player_minimum = 20
+	player_minimum = 12
 
 /datum/uplink_item/stealthy_tools/chameleon/nuke
 	cost = 6
@@ -741,7 +741,7 @@ GLOBAL_LIST_EMPTY(uplink_items) // Global list so we only initialize this once.
 	item = /obj/item/clothing/shoes/chameleon
 	cost = 2
 	exclude_modes = list(/datum/game_mode/nuclear)
-	player_minimum = 20
+	player_minimum = 12
 
 /datum/uplink_item/stealthy_tools/frame
 	name = "F.R.A.M.E. PDA Cartridge"
@@ -1164,7 +1164,7 @@ GLOBAL_LIST_EMPTY(uplink_items) // Global list so we only initialize this once.
 			cocktail which has a mild healing effect along with removing all stuns and increasing movement speed."
 	item = /obj/item/storage/box/syndie_kit/imp_adrenal
 	cost = 8
-	player_minimum = 25
+	player_minimum = 15
 
 /datum/uplink_item/implants/storage
 	name = "Storage Implant"
@@ -1376,7 +1376,7 @@ GLOBAL_LIST_EMPTY(uplink_items) // Global list so we only initialize this once.
 			but you never know. Contents are sorted to always be worth 50 TC."
 	item = /obj/structure/closet/crate
 	cost = 20
-	player_minimum = 25
+	player_minimum = 15 //because 25 is unrealistic for this server; 15 is semi-rare but possible
 	exclude_modes = list(/datum/game_mode/nuclear)
 	cant_discount = TRUE
 
