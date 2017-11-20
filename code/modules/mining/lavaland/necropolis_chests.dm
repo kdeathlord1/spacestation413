@@ -26,16 +26,16 @@
 		if(6)
 			new /obj/item/reagent_containers/glass/bottle/potion/flight(src)
 		if(7)
-			new /obj/item/ore/bananium
-			new /obj/item/ore/bananium
-			new /obj/item/ore/bananium
-			new /obj/item/ore/bananium
-			new /obj/item/ore/bananium
-			new /obj/item/ore/bananium
-			new /obj/item/ore/bananium
-			new /obj/item/ore/bananium
-			new /obj/item/ore/bananium
-			new /obj/item/ore/bananium
+			new /obj/item/ore/bananium(src)
+			new /obj/item/ore/bananium(src)
+			new /obj/item/ore/bananium(src)
+			new /obj/item/ore/bananium(src)
+			new /obj/item/ore/bananium(src)
+			new /obj/item/ore/bananium(src)
+			new /obj/item/ore/bananium(src)
+			new /obj/item/ore/bananium(src)
+			new /obj/item/ore/bananium(src)
+			new /obj/item/ore/bananium(src)
 		if(8)
 			if(prob(50))
 				new /obj/item/disk/design_disk/modkit_disc/resonator_blast(src)
